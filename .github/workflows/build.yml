@@ -1,0 +1,50 @@
+name: Build Arabic release
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - name: Install Android SDK components
+        run: |
+          sdkmanager "platforms;android-36" "build-tools;36.1.0"
+
+      - name: Build unsigned release APK
+        run: |
+          chmod +x gradlew
+          ./gradlew assembleRelease
+
+      - name: Prepare artifacts
+        run: |
+          mkdir -p dist
+          cp app/build/outputs/apk/release/app-release-unsigned.apk "dist/TurboIMS-v3.0-ar1-unsigned.apk"
+          zip -r "dist/TurboIMS-v3.0-ar1-source.zip" . -x "./.git/*" "./dist/*" "./app/build/*" "./.gradle/*" "./stub/build/*"
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v3.0-ar1
+          name: Turbo IMS Arabic v3.0-ar1
+          body: |
+            Arabic localized, accessibility-friendly custom build of Turbo IMS (upstream v3.0, github.com/Turbo1123/TurboIMS, itself based on vvb2060/Ims).
+            - Full Arabic UI; app name stays English "Turbo IMS".
+            - Languages stripped to Arabic + English; language button toggles العربية/English.
+            - TalkBack labels on all 7 feature switches; decorative/removed: splash screen, "for Pixel" subtitle, splash version text.
+            - No update checks or About/links existed upstream - nothing needed stripping.
+            - No defaults of user-toggleable settings changed.
+            - Unsigned release APK: sign it yourself before installing.
+          files: dist/*

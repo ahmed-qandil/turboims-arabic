@@ -89,6 +89,15 @@ public class MainActivity extends Activity {
         switchUT = findViewById(R.id.item_ut).findViewById(R.id.feature_switch);
         switch5GNR = findViewById(R.id.item_5g_nr).findViewById(R.id.feature_switch);
 
+        // TalkBack labels for the otherwise unlabeled feature switches
+        switchVoLTE.setContentDescription(getString(R.string.volte));
+        switchVoWiFi.setContentDescription(getString(R.string.vowifi));
+        switchVT.setContentDescription(getString(R.string.vt));
+        switchVoNR.setContentDescription(getString(R.string.vonr));
+        switchCrossSIM.setContentDescription(getString(R.string.cross_sim));
+        switchUT.setContentDescription(getString(R.string.ut));
+        switch5GNR.setContentDescription(getString(R.string._5g_nr));
+
         // Set feature titles and descriptions
         ((TextView) findViewById(R.id.item_volte).findViewById(R.id.feature_title))
             .setText(R.string.volte);
@@ -302,7 +311,7 @@ public class MainActivity extends Activity {
                 try {
                     startActivity(intent);
                 } catch (Exception e) {
-                    Toast.makeText(this, "Unable to open network settings", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, R.string.unable_to_open_settings, Toast.LENGTH_SHORT).show();
                 }
             })
             .setNegativeButton(R.string.later, null)

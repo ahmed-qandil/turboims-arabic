@@ -6,8 +6,8 @@ android {
     namespace = "io.github.vvb2060.ims"
     defaultConfig {
         applicationId = "io.github.turboims.pixel"
-        versionCode = 5
-        versionName = "3.0"
+        versionCode = 6
+        versionName = "v3.0-ar1"
     }
     buildTypes {
         release {
@@ -15,7 +15,6 @@ android {
             isShrinkResources = true
             vcsInfo.include = false
             proguardFiles("proguard-rules.pro")
-            signingConfig = signingConfigs["debug"]
         }
     }
     compileOptions {

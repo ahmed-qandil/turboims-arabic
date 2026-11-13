@@ -22,13 +22,13 @@ public class LocaleHelper {
         SharedPreferences prefs = context.getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE);
         // 如果用户已经手动设置过语言，使用用户设置
         if (prefs.contains(KEY_LANGUAGE)) {
-            return prefs.getString(KEY_LANGUAGE, "zh");
+            return prefs.getString(KEY_LANGUAGE, "ar");
         }
 
         // 否则根据系统语言自动判断
         String systemLang = Locale.getDefault().getLanguage();
         // 如果系统语言是中文（包括简体、繁体等），使用中文，否则使用英文
-        return systemLang.startsWith("zh") ? "zh" : "en";
+        return systemLang.startsWith("ar") ? "ar" : "en";
     }
 
     public static void updateResources(Context context, String languageCode) {
@@ -44,7 +44,7 @@ public class LocaleHelper {
 
     public static String toggleLanguage(Context context) {
         String currentLang = getLanguage(context);
-        String newLang = currentLang.equals("zh") ? "en" : "zh";
+        String newLang = currentLang.equals("ar") ? "en" : "ar";
         setLocale(context, newLang);
         return newLang;
     }

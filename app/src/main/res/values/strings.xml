@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Turbo IMS</string>
-    <string name="for_pixel">for Pixel</string>
 
     <!-- Main Screen -->
     <string name="title">Turbo IMS Configuration</string>
@@ -47,7 +46,7 @@
 
     <!-- Language -->
     <string name="language">Language</string>
-    <string name="switch_language">中文</string>
+    <string name="switch_language">العربية</string>
 
     <!-- SIM Card -->
     <string name="select_sim">Select SIM Card</string>
@@ -65,4 +64,5 @@
     <string name="go_to_network_settings">Go to Network Settings</string>
     <string name="config_success_message">Configuration applied successfully! Would you like to go to network settings?</string>
     <string name="later">Later</string>
+    <string name="unable_to_open_settings">Unable to open network settings</string>
 </resources>

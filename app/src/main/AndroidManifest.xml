@@ -8,19 +8,14 @@
         android:theme="@android:style/Theme.DeviceDefault.DayNight">
 
         <activity
-            android:name=".SplashActivity"
+            android:name=".MainActivity"
             android:exported="true"
-            android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen">
+            android:label="Turbo IMS">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity
-            android:name=".MainActivity"
-            android:exported="false"
-            android:label="Turbo IMS" />
 
         <provider
             android:name=".ShizukuProvider"

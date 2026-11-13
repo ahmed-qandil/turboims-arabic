@@ -34,15 +34,6 @@
                     android:textColor="#FFFFFF"
                     android:gravity="center" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/for_pixel"
-                    android:textSize="14sp"
-                    android:textColor="#E0E0E0"
-                    android:gravity="center"
-                    android:layout_marginTop="4dp"
-                    android:fontFamily="monospace" />
             </LinearLayout>
 
             <Button

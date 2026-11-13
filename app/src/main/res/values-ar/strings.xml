@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Turbo IMS</string>
+
+    <!-- Main Screen -->
+    <string name="title">إعدادات Turbo IMS</string>
+    <string name="system_info">معلومات النظام</string>
+    <string name="android_version">إصدار أندرويد: %s</string>
+    <string name="shizuku_status">حالة Shizuku: %s</string>
+    <string name="shizuku_ready">✅ جاهز</string>
+    <string name="shizuku_not_running">❌ لا يعمل</string>
+    <string name="shizuku_no_permission">⚠️ لا يوجد إذن</string>
+
+    <!-- Warning -->
+    <string name="qpr2_beta3_warning">⚠️ تحذير: الإصدار Android 16 QPR2 Beta 3 والأحدث يقيّد الحفظ الدائم للإعدادات. ستعود الإعدادات بعد إعادة تشغيل الهاتف وستحتاج إلى إعادة تطبيقها.</string>
+
+    <!-- Features -->
+    <string name="features_config">إعدادات المزايا</string>
+    <string name="volte">VoLTE (مكالمات صوتية عبر 4G)</string>
+    <string name="volte_desc">تفعيل المكالمات الصوتية عالية الجودة عبر شبكة 4G</string>
+    <string name="vowifi">VoWiFi (المكالمات عبر واي فاي)</string>
+    <string name="vowifi_desc">تفعيل المكالمات عبر شبكة واي فاي</string>
+    <string name="vt">VT (مكالمات الفيديو)</string>
+    <string name="vt_desc">تفعيل ميزة مكالمات الفيديو</string>
+    <string name="vonr">VoNR (مكالمات صوتية عبر 5G)</string>
+    <string name="vonr_desc">تفعيل المكالمات الصوتية عالية الجودة عبر شبكة 5G</string>
+    <string name="cross_sim">Cross-SIM (المكالمات بين الشريحتين)</string>
+    <string name="cross_sim_desc">الربط بين الشريحتين</string>
+    <string name="ut">الخدمات التكميلية UT</string>
+    <string name="ut_desc">تحويل المكالمات، انتظار المكالمات، وغيرها</string>
+    <string name="_5g_nr">شبكة 5G NR (NSA/SA)</string>
+    <string name="_5g_nr_desc">تفعيل شبكة الجيل الخامس (غير المستقلة/المستقلة)</string>
+
+    <!-- Button -->
+    <string name="apply_config">تطبيق الإعدادات</string>
+
+    <!-- Tips -->
+    <string name="tips">تلميحات:
+• يجب تشغيل Shizuku ومنحه الإذن أولاً
+• تُطبَّق الإعدادات على كل الشرائح النشطة
+• الإصدار Android 16 QPR2 Beta 3 والأحدث يحتاج إعادة التطبيق بعد إعادة التشغيل</string>
+
+    <!-- Messages -->
+    <string name="shizuku_not_running_msg">Shizuku لا يعمل. شغّل Shizuku أولاً من فضلك.</string>
+    <string name="shizuku_no_permission_msg">من فضلك امنح إذن Shizuku</string>
+    <string name="config_applied">تم تطبيق الإعدادات بنجاح!</string>
+    <string name="config_failed">فشل تطبيق الإعدادات: %s</string>
+    <string name="update_shizuku">من فضلك حدّث Shizuku إلى أحدث إصدار</string>
+
+    <!-- Language -->
+    <string name="language">اللغة</string>
+    <string name="switch_language">English</string>
+
+    <!-- SIM Card -->
+    <string name="select_sim">اختيار الشريحة</string>
+    <string name="sim_card">الشريحة</string>
+    <string name="no_sim_found">لم يتم العثور على شريحة نشطة</string>
+    <string name="sim_1">الشريحة 1</string>
+    <string name="sim_2">الشريحة 2</string>
+    <string name="apply_to_all_sims">التطبيق على كل الشرائح</string>
+    <string name="apply_to_sim_1">التطبيق على الشريحة 1</string>
+    <string name="apply_to_sim_2">التطبيق على الشريحة 2</string>
+    <string name="apply_to_all">التطبيق على الكل</string>
+    <string name="config_applied_to_all">تم تطبيق الإعدادات على كل الشرائح!</string>
+
+    <!-- Network Settings -->
+    <string name="go_to_network_settings">الانتقال إلى إعدادات الشبكة</string>
+    <string name="config_success_message">تم تطبيق الإعدادات بنجاح! هل تريد الانتقال إلى إعدادات الشبكة؟</string>
+    <string name="later">لاحقاً</string>
+    <string name="unable_to_open_settings">تعذّر فتح إعدادات الشبكة</string>
+</resources>
